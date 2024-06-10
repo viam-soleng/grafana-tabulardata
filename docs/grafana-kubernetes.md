@@ -1,5 +1,7 @@
 # Viam - Deploy Grafana with Kubernetes
 
+The following guide(s) help you with deploying Grafana including the Viam data source plugin. If you have questions feel free to reach out by creating an issue or via [Viam Community](https://www.viam.com/resources/community).
+
 ## Deploy on GCP Kubernetes Engine "GKE"
 
 This guide helps you provision a stateful Grafana instance to your personal GCP Kubernetes Engine (GKE).
