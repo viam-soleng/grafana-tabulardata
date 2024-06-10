@@ -6,7 +6,7 @@ It connects to your Viam organization on [app.viam.com](https://app.viam.com) an
 We will continue to make improvements over time therfore please don't hesitate to reach out or submit pull requests with enhancements.
 
 > [!NOTE]  
-> The plugin is tested with Grafana version 10.x.x! only!
+> The plugin is tested with Grafana version 10.x.x only!
 
 ## Deploy Your Own Grafana Environment
 Detailed instruction on how to create your own Grafana environment, using the provided Grafana docker image including the Viam-Grafana data source plugin: 
