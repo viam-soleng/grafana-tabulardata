@@ -11,9 +11,9 @@ We will continue to make improvements over time therfore please don't hesitate t
 ## Deploy Your Own Grafana Environment
 
 Creating your own Grafana instance is simple and works in many different environments. Choose your preferred setup and follow the instructions:
-- Dockerfile
-- Kubernetes
-- Package Repository
+- [Docker](docs/grafana-docker.md)
+- [Kubernetes](docs/grafana-kubernetes.md)
+- [Package Repository](docs/grafana-package-repository.md)
 
 ## Configure A Dashboard
 See here for detailed instructions on how to configure your own Grafana dashboard displaying Viam data: 
