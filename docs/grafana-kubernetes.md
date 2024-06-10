@@ -12,7 +12,7 @@ After this step you can then use the GCP command line interface on your local ma
 
 Change them wherever applicable! E.g. change the cloud region etc.
 
-1. Create a Kubernetes cluster:
+*1. Create a Kubernetes cluster:*
 
 ```
 gcloud container clusters create-auto soleng-grafana --location=us-central1
