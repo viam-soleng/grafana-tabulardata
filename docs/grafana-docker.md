@@ -3,7 +3,7 @@
 These instructions will help you create a Docker image containing the Viam - Grafana Data Source Plugin.
 
 
-## Run Grafana Container (Single Command)
+## Run Grafana Container incl. Plugin (Single Command)
 
 This command uses the official Grafana Docker image, installs the Viam data source plugin and starts a container, all in a single command:
 
