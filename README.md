@@ -15,12 +15,12 @@ Creating your own Grafana instance is simple and works in many different environ
 - [Kubernetes](docs/grafana-kubernetes.md)
 - [Package Repository](docs/grafana-package-repository.md)
 
-## Configure A Dashboard
+## Connect and Configure a Dashboard
 See here for detailed instructions on how to configure your own Grafana dashboard displaying Viam data: 
 
 [Configure a Dashboard](docs/configure-dashboard.md)
 
-## Create A Local Development Environment
+## Setup a Development Environment
 You may want to contribute or create your own signed plugin version. To do so, use these instructions to get started:
 
 [Create Development Environment](docs/dev-environment.md)
