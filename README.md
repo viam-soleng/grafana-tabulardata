@@ -23,6 +23,6 @@ See here for detailed instructions on how to configure your own Grafana dashboar
 ## Setup a Development Environment
 You may want to contribute or create your own signed plugin version. To do so, use these instructions to get started:
 
-[Create Development Environment](docs/dev-environment.md)
+[Create Development Environment](docs/plugin-development.md)
 
 
