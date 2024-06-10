@@ -9,9 +9,11 @@ We will continue to make improvements over time therfore please don't hesitate t
 > The plugin is tested with Grafana version 10.x.x only!
 
 ## Deploy Your Own Grafana Environment
-Detailed instruction on how to create your own Grafana environment, using the provided Grafana docker image including the Viam-Grafana data source plugin: 
 
-[Create your personal Grafana Instance](docs/README.md)
+Creating your own Grafana instance is simple and works in many different environments. Choose your preferred setup and follow the instructions:
+- Dockerfile
+- Kubernetes
+- Package Repository
 
 ## Configure A Dashboard
 See here for detailed instructions on how to configure your own Grafana dashboard displaying Viam data: 
