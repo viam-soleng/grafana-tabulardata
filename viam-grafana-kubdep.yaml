@@ -32,7 +32,7 @@ spec:
       containers:
         - name: grafana
           # Add your Docker image reference here
-          image: grafana/grafana:latest
+          image: grafana/grafana:10.4.3
           imagePullPolicy: IfNotPresent
           env:
             # Update the value with the location of the plugin zip file
