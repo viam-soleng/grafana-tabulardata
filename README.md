@@ -6,7 +6,7 @@ It connects to your Viam organization on [app.viam.com](https://app.viam.com) an
 We will continue to make improvements over time therfore please don't hesitate to reach out or submit pull requests with enhancements.
 
 > [!NOTE]  
-> The plugin is tested with Grafana version 10.x.x & 11.0.0!
+> The plugin was tested with Grafana version 10.x.x & 11.0.0!
 
 ## Deploy Your Own Grafana Environment
 
