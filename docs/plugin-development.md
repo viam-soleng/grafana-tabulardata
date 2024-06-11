@@ -63,34 +63,6 @@ Clone the Github repository and run the following commands from the root directo
 
 ## Build a New Plugin Release
 
-The following commad will build a deployable version into the `dist` folder.
-
-   ```bash
-   npm run build
-   ```
-
-While you can manually copy/paste the dist folder, it is more convenient to share compressed files.
-
-TODO: Probably makes sense to rename the dist folder
-
-    ```bash
-    tar -czf viam-grafana-v0.0.1.tar.gz dist
-    ```
-
-## [optional] Sign Plugin
-To make sure the plugins are not altered, you also have the option of signing the plugin.
-More information: [Grafana Plugin Signatures](https://grafana.com/docs/grafana/latest/administration/plugin-management/#plugin-signatures)
-You can also configure your Grafana instance to allow unsigned plugins: [Allow Unsigned Plugins](https://grafana.com/docs/grafana/latest/administration/plugin-management/#allow-unsigned-plugins)
-
-# Viam-Grafana Plugin Build / Release New Version
-
-For enhancements or bug fixes we might have to release new versions of the plugin and make it available in the "releases" folder in this projects root.
-You can find instructions to do so following.
-
-## Create New Plugin Release (zip file)
-The zip files in the releases folder can be used for automated deployments without embedding the plugin into the image.
-This process is used in the Kubernetes deployment in the [README.md](README.md)
-
 ```
 # Creates the build into the "dist" folder
 npm run build
@@ -109,4 +81,11 @@ To download/reference the zip files use the following url:
 https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.1.0.zip
 
 Otherwise the file will be in the wrong format!
+
+## [optional] Sign Plugin
+To make sure the plugins are not altered, you also have the option of signing the plugin.
+More information: [Grafana Plugin Signatures](https://grafana.com/docs/grafana/latest/administration/plugin-management/#plugin-signatures)
+You can also configure your Grafana instance to allow unsigned plugins: [Allow Unsigned Plugins](https://grafana.com/docs/grafana/latest/administration/plugin-management/#allow-unsigned-plugins)
+
+
 
