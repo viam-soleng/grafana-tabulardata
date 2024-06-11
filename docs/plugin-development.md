@@ -63,6 +63,8 @@ Clone the Github repository and run the following commands from the root directo
 
 ## Build a New Plugin Release
 
+The following steps will bundle the plugin in a zip file for distribution. It is also used in some of the deployment scenarios documented in the [Readme.md](../README.md).
+
 ```
 # Creates the build into the "dist" folder
 npm run build
