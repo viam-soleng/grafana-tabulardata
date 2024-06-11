@@ -1,24 +1,27 @@
 # Viam - Grafana Data Source Plugin - Development Environment
 
-These instructions help you with the setup of a local development environment to customize or enhance the Viam - Grafana plugin as well as building and signing the plugin for distribution.
+Use these instructions to set up your personal plugin development environment to modify, update, enhance the plugin and create a new release.
 
-Prerequisites:
+
+## Development Environment Setup
+
+**Prerequisites:**
 - Docker runtime environment installed and started e.g Docker desktop
 
 Clone the Github repository and run the following commands from the root directory.
 
-1. Install dependencies
+**1. Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Build plugin in development mode and run in watch mode
+**2. Build plugin in development mode and run in watch mode**
 
    ```bash
    npm run dev
    ```
-3. [optional] Run the tests (using Jest)
+**3. [optional] Run the tests (using Jest)**
 
    ```bash
    # Runs the tests and watches for changes, requires git init first
@@ -28,13 +31,13 @@ Clone the Github repository and run the following commands from the root directo
    npm run test:ci
    ```
 
-4. Spin up a Grafana instance and run the plugin inside it (using Docker)
+**4. Spin up a Grafana instance and run the plugin inside it (using Docker)**
 
    ```bash
    npm run server
    ```
 
-5. [optional] Run the E2E tests (using Cypress)
+**5. [optional] Run the E2E tests (using Cypress)**
 
    ```bash
    # Spins up a Grafana instance first that we tests against
@@ -44,7 +47,7 @@ Clone the Github repository and run the following commands from the root directo
    npm run e2e
    ```
 
-6. [optional] Run the linter
+**6. [optional] Run the linter**
 
    ```bash
    npm run lint
@@ -54,38 +57,13 @@ Clone the Github repository and run the following commands from the root directo
    npm run lint:fix
    ```
 
-7. Open the webbrowser at [localhost:3000](http://localhost:3000) 
+7. **Open the webbrowser at [localhost:3000](http://localhost:3000)**
     - Credentials: username: admin / password: admin
 
 
-## Build & Sign the Plugin
+## Build a New Plugin Release
 
-The following commad will build a deployable version into the `dist` folder.
-
-   ```bash
-   npm run build
-   ```
-
-While you can manually copy/paste the dist folder, it is more convenient to share compressed files.
-
-TODO: Probably makes sense to rename the dist folder
-
-    ```bash
-    tar -czf viam-grafana-v0.0.1.tar.gz dist
-    ```
-
-To make sure the plugins are not altered, you also have the option of signing the plugin.
-More information: [Grafana Plugin Signatures](https://grafana.com/docs/grafana/latest/administration/plugin-management/#plugin-signatures)
-You can also configure your Grafana instance to allow unsigned plugins: [Allow Unsigned Plugins](https://grafana.com/docs/grafana/latest/administration/plugin-management/#allow-unsigned-plugins)
-
-# Viam-Grafana Plugin Build / Release New Version
-
-For enhancements or bug fixes we might have to release new versions of the plugin and make it available in the "releases" folder in this projects root.
-You can find instructions to do so following.
-
-## Create New Plugin Release (zip file)
-The zip files in the releases folder can be used for automated deployments without embedding the plugin into the image.
-This process is used in the Kubernetes deployment in the [README.md](README.md)
+The following steps will bundle the plugin in a zip file for distribution. It is also used in some of the deployment scenarios documented in the [Readme.md](../README.md).
 
 ```
 # Creates the build into the "dist" folder
@@ -105,4 +83,11 @@ To download/reference the zip files use the following url:
 https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.1.0.zip
 
 Otherwise the file will be in the wrong format!
+
+## [optional] Sign Plugin
+To make sure the plugins are not altered, you also have the option of signing the plugin.
+More information: [Grafana Plugin Signatures](https://grafana.com/docs/grafana/latest/administration/plugin-management/#plugin-signatures)
+You can also configure your Grafana instance to allow unsigned plugins: [Allow Unsigned Plugins](https://grafana.com/docs/grafana/latest/administration/plugin-management/#allow-unsigned-plugins)
+
+
 

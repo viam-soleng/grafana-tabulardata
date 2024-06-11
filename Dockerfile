@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.4.2
+FROM grafana/grafana
 
 WORKDIR /app
 

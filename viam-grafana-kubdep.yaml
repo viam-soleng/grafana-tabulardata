@@ -32,13 +32,13 @@ spec:
       containers:
         - name: grafana
           # Add your Docker image reference here
-          image: grafana/grafana:10.4.3
+          image: grafana/grafana
           imagePullPolicy: IfNotPresent
           env:
             # Update the value with the location of the plugin zip file
             # If a Github is used, make sure its the "raw" url otherwise the zip file will be broken
             - name: GF_INSTALL_PLUGINS
-              value: "https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.1.0.zip;viam-datasource"
+              value: "https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.2.0.zip;viam-datasource"
             - name: GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS
               value: viam-datasource
           ports:
