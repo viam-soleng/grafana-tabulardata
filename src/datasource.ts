@@ -50,7 +50,9 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
 
   filterQuery(query: MyQuery): boolean {
     // if no query has been provided, prevent the query from being executed
-    return !!query.queryText;
+    // Currently not needed thus executes query any time
+    //return !!query.queryText; -> change to:
+    return true
   }
 
   // Datasource query processing
