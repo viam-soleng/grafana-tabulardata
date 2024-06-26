@@ -85,8 +85,9 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
         filter.setMethod(target.method);
         // Execute query
         const { data, count } = await this.client.dataClient.tabularDataByFilter(filter, maxDataPoints);
+        console.log("Data: " + JSON.stringify(data));
         // Return Grafana DataFrame
-        const fields: Field[] = buildFrameFields(data, target.timeField);
+        const fields: Field[] = buildFrameFields(data);
         return {
           name: target.refId,
           fields: fields,
