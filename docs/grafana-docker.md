@@ -9,9 +9,9 @@ This command uses the official Grafana Docker image, installs the Viam data sour
 
 ```bash
 docker run -d -p 3000:3000 --name=grafana \
-  -e "GF_INSTALL_PLUGINS=https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.1.0.zip;viam-datasource" \
+  -e "GF_INSTALL_PLUGINS=https://github.com/viam-soleng/grafana-tabulardata/raw/main/releases/viam-grafana-0.3.0.zip;viam-datasource" \
   -e "GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=viam-datasource" \
-  grafana/grafana:10.4.2
+  grafana/grafana
 ```
 
 ## Build and Run Your Own Image
